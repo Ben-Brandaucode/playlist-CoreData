@@ -13,7 +13,6 @@
 		BF368D83252EDDAF00EEF7A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF368D81252EDDAF00EEF7A9 /* Main.storyboard */; };
 		BF368D86252EDDAF00EEF7A9 /* PlaylistCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BF368D84252EDDAF00EEF7A9 /* PlaylistCoreData.xcdatamodeld */; };
 		BF368D88252EDDAF00EEF7A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF368D87252EDDAF00EEF7A9 /* Assets.xcassets */; };
-		BF368D8B252EDDB000EEF7A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF368D89252EDDB000EEF7A9 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,7 +23,6 @@
 		BF368D82252EDDAF00EEF7A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BF368D85252EDDAF00EEF7A9 /* PlaylistCoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PlaylistCoreData.xcdatamodel; sourceTree = "<group>"; };
 		BF368D87252EDDAF00EEF7A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		BF368D8A252EDDB000EEF7A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF368D8C252EDDB000EEF7A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -58,16 +56,47 @@
 		BF368D7A252EDDAF00EEF7A9 /* PlaylistCoreData */ = {
 			isa = PBXGroup;
 			children = (
-				BF368D7B252EDDAF00EEF7A9 /* AppDelegate.swift */,
-				BF368D7D252EDDAF00EEF7A9 /* SceneDelegate.swift */,
-				BF368D7F252EDDAF00EEF7A9 /* ViewController.swift */,
-				BF368D81252EDDAF00EEF7A9 /* Main.storyboard */,
-				BF368D87252EDDAF00EEF7A9 /* Assets.xcassets */,
-				BF368D89252EDDB000EEF7A9 /* LaunchScreen.storyboard */,
-				BF368D8C252EDDB000EEF7A9 /* Info.plist */,
-				BF368D84252EDDAF00EEF7A9 /* PlaylistCoreData.xcdatamodeld */,
+				BF368D94252EDEF100EEF7A9 /* Models */,
+				BF368D96252EDF1B00EEF7A9 /* views */,
+				BF368D97252EDF2400EEF7A9 /* Controllers */,
+				BF368D93252EDED000EEF7A9 /* resources */,
 			);
 			path = PlaylistCoreData;
+			sourceTree = "<group>";
+		};
+		BF368D93252EDED000EEF7A9 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				BF368D7B252EDDAF00EEF7A9 /* AppDelegate.swift */,
+				BF368D7D252EDDAF00EEF7A9 /* SceneDelegate.swift */,
+				BF368D87252EDDAF00EEF7A9 /* Assets.xcassets */,
+				BF368D8C252EDDB000EEF7A9 /* Info.plist */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+		BF368D94252EDEF100EEF7A9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BF368D84252EDDAF00EEF7A9 /* PlaylistCoreData.xcdatamodeld */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BF368D96252EDF1B00EEF7A9 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				BF368D81252EDDAF00EEF7A9 /* Main.storyboard */,
+				BF368D7F252EDDAF00EEF7A9 /* ViewController.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		BF368D97252EDF2400EEF7A9 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +156,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF368D8B252EDDB000EEF7A9 /* LaunchScreen.storyboard in Resources */,
 				BF368D88252EDDAF00EEF7A9 /* Assets.xcassets in Resources */,
 				BF368D83252EDDAF00EEF7A9 /* Main.storyboard in Resources */,
 			);
@@ -156,14 +184,6 @@
 				BF368D82252EDDAF00EEF7A9 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		BF368D89252EDDB000EEF7A9 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BF368D8A252EDDB000EEF7A9 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -292,7 +312,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 73V52F7L32;
-				INFOPLIST_FILE = PlaylistCoreData/Info.plist;
+				INFOPLIST_FILE = PlaylistCoreData/resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -311,7 +331,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 73V52F7L32;
-				INFOPLIST_FILE = PlaylistCoreData/Info.plist;
+				INFOPLIST_FILE = PlaylistCoreData/resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
